@@ -12,14 +12,13 @@ $blue: #0099cc;
 $red: #ff5252;
 $text-color: #19212b;
 
-// General Reset
+// Common
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-// General Colors
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 14px;
@@ -32,6 +31,8 @@ h1, h3 {
   font-family: 'Lora', serif;
   font-weight: 300;
 }
+
+// Main
 
 .dashboard {
   max-width: 1200px;
@@ -60,17 +61,28 @@ h1, h3 {
     }
 
     &__toggle-details {
-      background: $primary-color;
+      align-items: center;
+      background-color: $primary-color;
       color: $white;
+      display: flex;
       font-family: 'Nunito', sans-serif;
       font-weight: 800;
       border: none;
       padding: 24px;
       cursor: pointer;
       text-transform: uppercase;
+      transition: background-color 0.3s ease;
   
       &:hover {
-        background: $dark-primary-color;
+        background-color: $dark-primary-color;
+      }
+
+      .material-symbols-outlined {
+        width: 24px;
+
+        + span {
+          margin-left: 6px;
+        }
       }
     }
   }
