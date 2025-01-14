@@ -1,1 +1,1 @@
-import './style.css'
+import './js/dashboard.js';

@@ -93,7 +93,6 @@ h3 {
   &-summary {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
 
     .summary-item {
       flex: 1;
@@ -125,6 +124,10 @@ h3 {
         margin-right: 0;
       }
     }
+  }
+
+  &-container {
+    margin-top: 24px;
   }
 
   &-detailed-info {
@@ -233,7 +236,12 @@ h3 {
     padding: 36px;
 
     &-container {
-      display: flex;
+      display: none;
+      margin-top: 36px;
+
+      &.show {
+        display: flex;
+      }
     }
 
     &-header {
@@ -275,8 +283,7 @@ h3 {
           font-size: 15px;
 
           &:first-child {
-            flex: 1;
-            width: auto;
+            width: 195px;
           }
         }
       }
@@ -293,10 +300,6 @@ h3 {
           padding: 10px;
         }
       }
-    }
-
-    &-summary {
-      margin-bottom: 36px;
     }
   }
 }
