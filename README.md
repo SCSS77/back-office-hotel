@@ -67,11 +67,11 @@ $text-color: #19212b;
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/SCSS77/back-office-hotel
    ```
 2. Navigate to the project folder:
    ```bash
-   cd bhm-dashboard
+   cd back-office-hotel
    ```
 3. Open `index.html` in a browser to view the dashboard.
 
